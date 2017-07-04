@@ -11,10 +11,8 @@ Tools::~Tools() {}
 
 VectorXd Tools::CalculateRMSE(const vector<VectorXd> &estimations,
                               const vector<VectorXd> &ground_truth) {
-    std::cout << "RMSE start" << std::endl;
-		
 	VectorXd rmse(4);
-	rmse << 0,0,0,0;
+    rmse.fill(0);
 
 	if (estimations.size() == 0) {
 	    cout << "Estimations size 0" << endl;
@@ -40,8 +38,6 @@ VectorXd Tools::CalculateRMSE(const vector<VectorXd> &estimations,
 	    rmse += vecs[i];
 	}
     
-    std::cout << "#vecs = " << vecs.size() << std::endl;
-
 	rmse /= (double) vecs.size();
 
 	//calculate the squared root
