@@ -1,11 +1,20 @@
-# Unscented Kalman Filter Project Starter Code
+# Unscented Kalman Filter Project
+
+## Run this project
+    
+    # 1. Get the Udacity Term2 Simulator
+    # 2.
+    mkdir build; cd build; cmake ..; make; ./UnscentedKF
+
+## Description
+
 Self-Driving Car Engineer Nanodegree Program
 
-In this project utilize an Unscented Kalman Filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Passing the project requires obtaining RMSE values that are lower that the tolerance outlined in the project reburic. 
+In this project utilize an Unscented Kalman Filter to estimate the state of a moving object of interest with noisy LIDAR and radar measurements. Passing the project requires obtaining RMSE values that are lower that the tolerance outlined in the project rubric.
 
 This project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases)
 
-This repository includes two files that can be used to set up and intall [uWebSocketIO](https://github.com/uWebSockets/uWebSockets) for either Linux or Mac systems. For windows you can use either Docker, VMware, or even [Windows 10 Bash on Ubuntu](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/) to install uWebSocketIO. 
+This repository includes two files that can be used to set up and install [uWebSocketIO](https://github.com/uWebSockets/uWebSockets) for either Linux or Mac systems. For windows you can use either Docker, VMware, or even [Windows 10 Bash on Ubuntu](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/) to install uWebSocketIO.
 
 Once the install for uWebSocketIO is complete, the main program can be built and ran by doing the following from the project top directory.
 
@@ -19,12 +28,12 @@ Note that the programs that need to be written to accomplish the project are src
 
 The program main.cpp has already been filled out, but feel free to modify it.
 
-Here is the main protcol that main.cpp uses for uWebSocketIO in communicating with the simulator.
+Here is the main protocol that main.cpp uses for uWebSocketIO in communicating with the simulator.
 
 
 INPUT: values provided by the simulator to the c++ program
 
-["sensor_measurement"] => the measurment that the simulator observed (either lidar or radar)
+["sensor_measurement"] => the measurement that the simulator observed (either LIDAR or radar)
 
 
 OUTPUT: values provided by the c++ program to the simulator
